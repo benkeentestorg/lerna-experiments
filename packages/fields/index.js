@@ -1,1 +1,1 @@
-module.exports = { component: 'fields', version: 2 };
+module.exports = { component: 'fields', version: 3 };
