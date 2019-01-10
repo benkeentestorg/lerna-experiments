@@ -5,4 +5,7 @@ export class Dialogs {
     set(id) {
 
     }
+    ugh () {
+        return 0;
+    }
 }

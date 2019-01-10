@@ -17,4 +17,7 @@ export class Buttons {
     another5() {
 
     }
+    ugh () {
+        return 0;
+    }
 }

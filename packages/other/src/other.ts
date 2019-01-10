@@ -5,4 +5,7 @@ export class Other {
     set(id) {
 
     }
+    ugh () {
+        return 0;
+    }
 }
