@@ -5,4 +5,7 @@ export class Buttons {
     set(id) {
         
     }
-}
+    another1(id) {
+
+    }
+}   
