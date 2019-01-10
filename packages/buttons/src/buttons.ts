@@ -8,4 +8,4 @@ export class Buttons {
     another1(id) {
 
     }
-}   
+}
