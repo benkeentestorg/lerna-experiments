@@ -6,6 +6,8 @@ class Buttons {
     }
     set(id) {
     }
+    another1(id) {
+    }
 }
 exports.Buttons = Buttons;
 //# sourceMappingURL=buttons.js.map
