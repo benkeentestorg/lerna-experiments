@@ -4,6 +4,8 @@ class Dialogs {
     get(id) {
         return {};
     }
+    set(id) {
+    }
 }
 exports.Dialogs = Dialogs;
 //# sourceMappingURL=dialogs.js.map
