@@ -1,1 +1,0 @@
-module.exports = { component: 'buttons', version: 1 };

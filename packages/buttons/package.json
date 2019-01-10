@@ -1,20 +1,31 @@
 {
   "name": "@benkeentestorg/buttons",
-  "version": "0.0.6",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Ben Keen <ben.keen@gmail.com>",
+  "homepage": "https://github.com/benkeentestorg/lerna-experiments#readme",
+  "license": "ISC",
+  "main": "lib/buttons.js",
+  "typings": "lib/buttons.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benkeentestorg/lerna-experiments.git"
+  },
   "scripts": {
-    "test": "npm jest"
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "keywords": [],
-  "author": "Global Relay",
-  "devDependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  },
-  "peerDependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
-  },
-  "gitHead": "9de5eadb27dde11f705612e33ec0b08affcec17e"
+  "bugs": {
+    "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
+  }
 }
