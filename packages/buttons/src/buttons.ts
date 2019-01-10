@@ -14,4 +14,7 @@ export class Buttons {
     another4(id) {
         return 'sigh';
     }
+    another5() {
+
+    }
 }
