@@ -8,6 +8,8 @@ class Buttons {
     }
     another1(id) {
     }
+    another3(id) {
+    }
 }
 exports.Buttons = Buttons;
 //# sourceMappingURL=buttons.js.map
