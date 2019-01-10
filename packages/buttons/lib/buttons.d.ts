@@ -3,4 +3,5 @@ export declare class Buttons {
     set(id: any): void;
     another1(id: any): void;
     another3(id: any): void;
+    another4(id: any): string;
 }

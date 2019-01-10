@@ -10,6 +10,9 @@ class Buttons {
     }
     another3(id) {
     }
+    another4(id) {
+        return 'sigh';
+    }
 }
 exports.Buttons = Buttons;
 //# sourceMappingURL=buttons.js.map
