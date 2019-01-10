@@ -15,6 +15,9 @@ class Buttons {
     }
     another5() {
     }
+    ugh() {
+        return 0;
+    }
 }
 exports.Buttons = Buttons;
 //# sourceMappingURL=buttons.js.map

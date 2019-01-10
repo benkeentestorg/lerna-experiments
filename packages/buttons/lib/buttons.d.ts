@@ -5,4 +5,5 @@ export declare class Buttons {
     another3(id: any): void;
     another4(id: any): string;
     another5(): void;
+    ugh(): number;
 }

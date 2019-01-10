@@ -6,6 +6,9 @@ class Dialogs {
     }
     set(id) {
     }
+    ugh() {
+        return 0;
+    }
 }
 exports.Dialogs = Dialogs;
 //# sourceMappingURL=dialogs.js.map

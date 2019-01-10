@@ -6,6 +6,9 @@ class Other {
     }
     set(id) {
     }
+    ugh() {
+        return 0;
+    }
 }
 exports.Other = Other;
 //# sourceMappingURL=other.js.map
