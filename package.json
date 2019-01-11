@@ -1,4 +1,6 @@
 {
+  "name": "root",
+  "private": true,
   "devDependencies": {
     "lerna": "^3.10.2"
   },
@@ -9,5 +11,4 @@
   "scripts": {
     "publish": "lerna run tsc && lerna publish"
   },
-  "name": "lerna-experiments"
 }
