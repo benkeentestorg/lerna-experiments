@@ -1,14 +1,11 @@
 {
   "name": "lerna-experiments",
-  "version": "1.0.0",
+  "version": "1.5.0",
   "devDependencies": {
     "lerna": "^3.10.2"
   },
   "dependencies": {
     "@types/node": "^10.12.18",
     "typescript": "^3.2.2"
-  },
-  "scripts": {
-    "publish": "lerna run tsc && lerna publish"
   }
 }
