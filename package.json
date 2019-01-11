@@ -1,7 +1,6 @@
 {
   "name": "lerna-experiments",
   "version": "0.0.1",
-  "private": true,
   "devDependencies": {
     "lerna": "^3.10.2"
   },
