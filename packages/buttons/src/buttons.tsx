@@ -6,16 +6,16 @@ export interface ButtonProps {
     // iconSize?: number | string;
     label: string;
     // buttonStyle?: React.CSSProperties;
-    // tooltip?: string;
+    tooltip?: string;
     onClick?: () => void;
 }
 
 
 export default class PrimaryButton extends React.Component <ButtonProps> {
     render () {
-        const { label, onClick } = this.props;
+        const { label, tooltip, onClick } = this.props;
         return (
-            <button onClick={onClick}>{label}!!</button>
+            <button onClick={onClick} alt={tooltip}>{label}</button>
         );
     }
 }
