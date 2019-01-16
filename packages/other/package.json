@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
-  "gitHead": "1e820efe0b501f61b461945142153d27a4d6b33e",
+  "gitHead": "0cbb29a35dc92d0ad8828c29bcf32cf26af8fffa",
   "dependencies": {
     "react": "^16.7.0"
   }
