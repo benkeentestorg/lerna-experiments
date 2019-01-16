@@ -1,14 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Dialogs {
-    get(id) {
+var Dialogs = (function () {
+    function Dialogs() {
+    }
+    Dialogs.prototype.get = function (id) {
         return {};
-    }
-    set(id) {
-    }
-    ugh() {
+    };
+    Dialogs.prototype.set = function (id) {
+    };
+    Dialogs.prototype.ugh = function () {
         return 0;
-    }
-}
-exports.Dialogs = Dialogs;
+    };
+    return Dialogs;
+}());
+export { Dialogs };
 //# sourceMappingURL=dialogs.js.map

@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
-  "gitHead": "d9cd46f72729db7de5383910b3e48b033ab64882",
+  "gitHead": "1e820efe0b501f61b461945142153d27a4d6b33e",
   "devDependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -34,6 +34,10 @@
     "rollup-plugin-postcss": "^1.6.3",
     "rollup-plugin-typescript2": "0.19.0",
     "typescript": "^3.2.2"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "dependencies": {
     "@types/react": "^16.7.20",

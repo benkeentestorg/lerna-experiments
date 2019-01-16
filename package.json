@@ -11,6 +11,6 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
-    "publish": "lerna run tsc && lerna publish"
+    "publish": "lerna publish"
   }
 }

@@ -1,14 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Other {
-    get(id) {
+var Other = (function () {
+    function Other() {
+    }
+    Other.prototype.get = function (id) {
         return {};
-    }
-    set(id) {
-    }
-    ugh() {
+    };
+    Other.prototype.set = function (id) {
+    };
+    Other.prototype.ugh = function () {
         return 0;
-    }
-}
-exports.Other = Other;
+    };
+    return Other;
+}());
+export { Other };
 //# sourceMappingURL=other.js.map
