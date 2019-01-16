@@ -1,7 +1,7 @@
 {
   "name": "@benkeentestorg/buttons",
   "version": "1.0.10",
-  "description": "> TODO: description",
+  "description": "Button components.",
   "author": "Ben Keen <ben.keen@gmail.com>",
   "homepage": "https://github.com/benkeentestorg/lerna-experiments#readme",
   "license": "ISC",
@@ -20,10 +20,26 @@
   "repository": "benkeentestorg/lerna-experiments",
   "scripts": {
     "tsc": "tsc",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
-  "gitHead": "d9cd46f72729db7de5383910b3e48b033ab64882"
+  "gitHead": "d9cd46f72729db7de5383910b3e48b033ab64882",
+  "devDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "rollup": "^1.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-typescript2": "0.19.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.7.20",
+    "react": "^16.7.0"
+  }
 }

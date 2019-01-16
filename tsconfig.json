@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "module": "commonjs",
     "declaration": true,
     "noImplicitAny": false,
@@ -16,5 +17,8 @@
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*.tsx"
   ]
 }
