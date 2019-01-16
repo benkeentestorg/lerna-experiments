@@ -12,9 +12,12 @@ const prod = 'production';
 const env = (process.env.NODE_ENV === prod || process.env.NODE_ENV === dev) ? process.env.NODE_ENV : dev;
 
 const plugins = [
+
     //replace({'process.env.NODE_ENV': JSON.stringify(env)}),
+
     resolve(),
     commonjs(),
+
 
     // commonjs({
     //     // All of our own sources will be ES6 modules, so only node_modules need to be resolved with cjs
@@ -46,9 +49,16 @@ export default {
         'react',
     ],
     input: './src/index.tsx',
-    output: {
-        sourcemap: true,
-        file: './dist/index.js',
-        format: 'cjs'
-    }
+    output: [
+        {
+            file: './dist/buttons.js',
+            format: 'cjs',
+            sourcemap: true
+        },
+        {
+            file: './dist/buttons-es6.js',
+            format: 'es',
+            sourcemap: true
+        }
+    ]
 };

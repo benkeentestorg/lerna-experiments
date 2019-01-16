@@ -5,12 +5,9 @@
   "author": "Ben Keen <ben.keen@gmail.com>",
   "homepage": "https://github.com/benkeentestorg/lerna-experiments#readme",
   "license": "ISC",
-  "main": "lib/buttons.js",
-  "typings": "lib/buttons.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/buttons.js",
+  "module": "dist/buttons-es6.js",
+  "typings": "dist/index.d.ts",
   "files": [
     "lib"
   ],
