@@ -15,7 +15,7 @@ export default class PrimaryButton extends React.Component <ButtonProps> {
     render () {
         const { label, onClick } = this.props;
         return (
-            <button onClick={onClick}>{label}</button>
+            <button onClick={onClick}>{label}!!</button>
         );
     }
 }

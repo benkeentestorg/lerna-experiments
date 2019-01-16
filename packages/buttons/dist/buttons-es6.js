@@ -36,7 +36,9 @@ var PrimaryButton = (function (_super) {
     }
     PrimaryButton.prototype.render = function () {
         var _a = this.props, label = _a.label, onClick = _a.onClick;
-        return (createElement("button", { onClick: onClick }, label));
+        return (createElement("button", { onClick: onClick },
+            label,
+            "!!"));
     };
     return PrimaryButton;
 }(Component));

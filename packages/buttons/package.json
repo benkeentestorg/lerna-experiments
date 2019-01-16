@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "dist/buttons.js",
   "module": "dist/buttons-es6.js",
-  "typings": "dist/index.d.ts",
+  "typings": "dist/buttons.d.ts",
   "files": [
     "lib"
   ],

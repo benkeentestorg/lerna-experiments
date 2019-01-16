@@ -18,8 +18,6 @@ const plugins = [
     resolve(),
     commonjs(),
 
-
-    // commonjs({
     //     // All of our own sources will be ES6 modules, so only node_modules need to be resolved with cjs
     //     include: 'node_modules/**',
     //     namedExports: {
@@ -36,7 +34,9 @@ const plugins = [
     //     writeDefinitions: true,
     //     // postcssModulesOptions: { ... }
     // }),
-    typescript()
+    typescript({
+        //tsconfig: "./src/tsconfig.json"
+    })
 ];
 
 // if (env === prod) {
@@ -46,9 +46,9 @@ const plugins = [
 export default {
     plugins,
     external: [
-        'react',
+        'react'
     ],
-    input: './src/index.tsx',
+    input: './src/buttons.tsx',
     output: [
         {
             file: './dist/buttons.js',
