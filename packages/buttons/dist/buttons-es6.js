@@ -35,10 +35,8 @@ var PrimaryButton = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     PrimaryButton.prototype.render = function () {
-        var _a = this.props, label = _a.label, onClick = _a.onClick;
-        return (createElement("button", { onClick: onClick },
-            label,
-            "!!"));
+        var _a = this.props, label = _a.label, className = _a.className, onClick = _a.onClick;
+        return (createElement("button", { onClick: onClick, className: className }, label));
     };
     return PrimaryButton;
 }(Component));

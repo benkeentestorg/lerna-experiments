@@ -16,7 +16,6 @@
   },
   "repository": "benkeentestorg/lerna-experiments",
   "scripts": {
-    "tsc": "tsc",
     "build": "rollup -c",
     "watch": "rollup -c -w",
     "test": "echo \"Error: run tests from root\" && exit 1"
