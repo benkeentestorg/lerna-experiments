@@ -31,7 +31,36 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var styles = require('./buttons.scss');
+function styleInject(css, ref) {
+  if ( ref === void 0 ) ref = {};
+  var insertAt = ref.insertAt;
+
+  if (!css || typeof document === 'undefined') { return; }
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css = ".buttons__pink___2lS2y {\n  color: pink; }\n  .buttons__pink___2lS2y .buttons__subElement___2qy3C {\n    font-style: italic; }\n\n.buttons__another___3aTQh {\n  font-style: italic; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJ1dHRvbnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQVksRUFBRTtFQUNkO0lBQ0UsbUJBQW1CLEVBQUU7O0FBRXpCO0VBQ0UsbUJBQW1CLEVBQUUiLCJmaWxlIjoiYnV0dG9ucy5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnBpbmsge1xuICBjb2xvcjogcGluazsgfVxuICAucGluayAuc3ViRWxlbWVudCB7XG4gICAgZm9udC1zdHlsZTogaXRhbGljOyB9XG5cbi5hbm90aGVyIHtcbiAgZm9udC1zdHlsZTogaXRhbGljOyB9XG4iXX0= */";
+styleInject(css);
+
 var PrimaryButton = (function (_super) {
     __extends(PrimaryButton, _super);
     function PrimaryButton() {
@@ -39,7 +68,7 @@ var PrimaryButton = (function (_super) {
     }
     PrimaryButton.prototype.render = function () {
         var _a = this.props, label = _a.label, className = _a.className, onClick = _a.onClick;
-        return (React.createElement("button", { onClick: onClick, className: className + " " + styles.pink }, label));
+        return (React.createElement("button", { onClick: onClick, className: className + " " + undefined }, label));
     };
     return PrimaryButton;
 }(React.Component));

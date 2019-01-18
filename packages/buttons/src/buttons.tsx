@@ -1,17 +1,13 @@
 import * as React from 'react';
-let styles = require('./buttons.scss');
+import * as styles from './buttons.scss';
 
 
 export interface ButtonProps {
-    // icon?: string;
-    // iconColor?: string;
-    // iconSize?: number | string;
     label: string;
     className?: string;
     buttonStyle?: React.CSSProperties;
     onClick?: () => void;
 }
-
 
 export default class PrimaryButton extends React.Component <ButtonProps> {
     render () {
