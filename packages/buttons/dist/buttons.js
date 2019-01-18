@@ -31,6 +31,7 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
+var styles = require('./buttons.scss');
 var PrimaryButton = (function (_super) {
     __extends(PrimaryButton, _super);
     function PrimaryButton() {
@@ -38,7 +39,7 @@ var PrimaryButton = (function (_super) {
     }
     PrimaryButton.prototype.render = function () {
         var _a = this.props, label = _a.label, className = _a.className, onClick = _a.onClick;
-        return (React.createElement("button", { onClick: onClick, className: className }, label));
+        return (React.createElement("button", { onClick: onClick, className: className + " " + styles.pink }, label));
     };
     return PrimaryButton;
 }(React.Component));

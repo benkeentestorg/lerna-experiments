@@ -18,18 +18,21 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.5",
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rollup": "^1.1.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^1.6.3",
+    "rollup-plugin-postcss-modules": "^1.0.10",
     "rollup-plugin-typescript2": "0.19.0",
     "typescript": "^3.2.2"
   },
@@ -38,8 +41,7 @@
     "react-dom": "^16.7.0"
   },
   "dependencies": {
-    "@types/react": "^16.7.20",
-    "react": "^16.7.0"
+    "@types/react": "^16.7.20"
   },
   "gitHead": "69b2df1235748bce458611e18740c6d4e7d208c6"
 }
