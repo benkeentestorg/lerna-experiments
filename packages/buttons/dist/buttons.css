@@ -1,12 +1,9 @@
-.buttons_pink__29_Wo {
-  color: pink;
+._red_1hano_1 {
+    color: green;
 }
-.buttons_pink__2lS2y {
-  color: pink; }
-  .buttons_pink__2lS2y .buttons_subElement__2qy3C {
-    font-style: italic; }
-
-.buttons_another__3aTQh {
-  font-style: italic; }
-
-/*# sourceMappingURL=buttons.css.map */
+._another_1hano_4 {
+    color: orange;
+}
+._another_1hano_4 ._sub_1hano_7 {
+        color: pink;
+    }

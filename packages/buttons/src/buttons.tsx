@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as styles from './buttons.scss';
-
+// import * as styles from './buttons.scss';
+import styles from './rawcss.css';
 
 export interface ButtonProps {
     label: string;
@@ -13,7 +13,7 @@ export default class PrimaryButton extends React.Component <ButtonProps> {
     render () {
         const { label, className, onClick } = this.props;
         return (
-            <button onClick={onClick} className={`${className} ${styles.pink}`}>{label}</button>
+            <button onClick={onClick} className={`${className} ${styles.red}`}>{label}</button>
         );
     }
 }

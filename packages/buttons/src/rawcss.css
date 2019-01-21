@@ -1,0 +1,10 @@
+.red {
+    color: green;
+}
+.another {
+    color: orange;
+
+    .sub {
+        color: pink;
+    }
+}
