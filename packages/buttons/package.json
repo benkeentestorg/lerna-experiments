@@ -6,7 +6,7 @@
   "homepage": "https://github.com/benkeentestorg/lerna-experiments#readme",
   "license": "ISC",
   "main": "dist/buttons.js",
-  "module": "dist/buttons-es6.js",
+  "module": "dist/buttons.js",
   "typings": "dist/buttons.d.ts",
   "files": [
     "dist"
@@ -23,7 +23,7 @@
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
   "devDependencies": {
-    "css-loader": "^2.1.0",
+    "css-loader": "0.28.11",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",

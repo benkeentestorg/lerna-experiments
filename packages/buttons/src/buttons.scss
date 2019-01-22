@@ -8,11 +8,17 @@ $color1: #333333;
   }
 }
 
-.another {
-  font-style: italic;
-}
+.chicken { color: $color1; }
 
 .perhaps {
   font-weight: bold;
   color: $color1;
+}
+
+.another {
+  font-style: italic;
+}
+
+.sight {
+  color: pink;
 }

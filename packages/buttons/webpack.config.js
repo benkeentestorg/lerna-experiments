@@ -10,10 +10,13 @@ module.exports = {
     entry: {
         'buttons': './src/buttons.tsx',
     },
+
     output: {
         path: targetFolder,
-        filename: 'buttons.js'
+        filename: 'buttons.js',
+        libraryTarget: 'var'
     },
+
     module: {
         rules: [
             {
@@ -24,10 +27,11 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     {
-                        loader: 'typings-for-css-modules-loader?modules&namedExport&camelCase',
+                        loader: 'typings-for-css-modules-loader',
                         options: {
+                            namedExport: true,
                             modules: true,
                             sourceMap: devMode,
                             localIdentName: '[name]__[local]__[hash:base64:5]'
@@ -71,5 +75,5 @@ module.exports = {
         })
     ],
 
-    devtool: 'source-map'
+    //devtool: 'source-map'
 };

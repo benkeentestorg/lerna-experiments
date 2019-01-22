@@ -12,10 +12,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "moduleResolution": "node",
-    "lib": [
-      "es6"
-    ],
+//    "moduleResolution": "node",
+//    "lib": [
+//      "es6"
+//    ],
     "plugins": [{
       "name": "typescript-plugin-css-modules"
     }]
@@ -25,8 +25,7 @@
     "**/*.spec.ts"
   ],
   "include": [
-    "src/**/*.tsx",
-    "src/**/*.scss"
+    "src/**/*.tsx"
   ]
 }
 
