@@ -15,14 +15,18 @@
     "moduleResolution": "node",
     "lib": [
       "es6"
-    ]
+    ],
+    "plugins": [{
+      "name": "typescript-plugin-css-modules"
+    }]
   },
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
   ],
   "include": [
-    "src/**/*.tsx"
+    "src/**/*.tsx",
+    "src/**/*.scss"
   ]
 }
 
