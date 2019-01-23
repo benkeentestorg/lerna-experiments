@@ -1,5 +1,8 @@
 import * as React from 'react';
-import * as styles from './buttons.scss';
+//import * as styles from './buttons.scss';
+import styles from './sigh.css';
+import morestyles from './newCssFile.css';
+
 
 export interface ButtonProps {
     label: string;
@@ -11,9 +14,8 @@ export interface ButtonProps {
 export default class PrimaryButton extends React.Component <ButtonProps> {
     render () {
         const { label, className, onClick } = this.props;
-
         return (
-            <button onClick={onClick} className={`${className} ${styles.pink}`}>{label}</button>
+            <button onClick={onClick} className={`${className} ${morestyles.orange} ${styles.pink}`}>{label}</button>
         );
     }
 }

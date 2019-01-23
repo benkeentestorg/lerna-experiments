@@ -3,10 +3,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
-//import '../packages/buttons/dist/buttons.css';
+import '../packages/buttons/dist/buttons.css';
 
-import * as PrimaryButton from '../packages/buttons/dist/buttons';
-
+import PrimaryButton from '../packages/buttons/dist/buttons';
 
 storiesOf('PrimaryButton', module)
     .add('with text', () => <PrimaryButton onClick={action('clicked')} label="My own button" />)
