@@ -17,23 +17,25 @@
   "repository": "benkeentestorg/lerna-experiments",
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "watch": "rollup -c -w",
+    "start": "node generateDefaultTypings.js & rollup -c -w",
     "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.6",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rollup": "^1.1.2",
     "rollup-plugin-postcss": "^2.0.0",
-    "rollup-plugin-postcss-modules": "^1.0.10",
+    "rollup-plugin-sass": "^1.1.0",
     "rollup-plugin-typescript2": "^0.19.2",
+    "typed-css-modules": "^0.3.7",
     "typescript": "^3.2.4"
   },
   "peerDependencies": {
@@ -41,7 +43,8 @@
     "react-dom": "^16.7.0"
   },
   "dependencies": {
-    "@types/react": "^16.7.20"
+    "@types/react": "^16.7.20",
+    "node-sass-chokidar": "^1.3.4"
   },
   "gitHead": "69b2df1235748bce458611e18740c6d4e7d208c6"
 }

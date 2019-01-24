@@ -1,24 +1,14 @@
 $color1: #333333;
 
 .pink {
-  color: pink;
-
-  .subElement {
-    font-style: italic;
-  }
+    color: pink;
 }
-
-.chicken { color: $color1; }
-
-.perhaps {
-  font-weight: bold;
+.urgh {
   color: $color1;
+  font-weight: bold;
 }
-
-.another {
-  font-style: italic;
-}
-
-.sight {
-  color: pink;
+.another { font-style: italic; }
+.another1 { color: $color1; }
+.another2 {
+  color: indianred;
 }

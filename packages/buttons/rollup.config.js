@@ -1,26 +1,26 @@
 import typescript from 'rollup-plugin-typescript2';
-// import resolve from 'rollup-plugin-node-resolve';
-// import commonjs from 'rollup-plugin-commonjs';
-//import postcss from 'rollup-plugin-postcss';
-import postcss from 'rollup-plugin-postcss-modules';
-
+import postcss from 'rollup-plugin-postcss';
 import autoprefixer from 'autoprefixer';
-import sass from 'node-sass';
-
-// const dev = 'development';
-// const prod = 'production';
-// const env = (process.env.NODE_ENV === prod || process.env.NODE_ENV === dev) ? process.env.NODE_ENV : dev;
-
+import { generateTypingsFile } from './build.js';
 
 export default {
     plugins: [
         postcss({
+            modules: true,
             extract: true,
-            writeDefinitions: true
-            //plugins: [
-            //     autoprefixer()
-            // ]
+            generateScopedName: '[name]__[local]___[hash:base64:5]',
+            plugins: [
+                autoprefixer()
+            ],
+            modules: {
+                getJSON: (filepath, json, outpath) => {
+                    console.log('generating.');
+                    generateTypingsFile(filepath, Object.keys(json));
+                }
+            },
+            extensions: ['.scss', '.css']
         }),
+
         typescript({
             clean: true
         })

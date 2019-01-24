@@ -29,7 +29,7 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var styles = {"pink":"_pink_15lna_1","urgh":"_urgh_15lna_4"};
+var styles = {"pink":"buttons_pink__2lS2y","urgh":"buttons_urgh__1Tydr","another":"buttons_another__3aTQh","another1":"buttons_another1__gTP3n","another2":"buttons_another2__2ZeF5"};
 
 var PrimaryButton = (function (_super) {
     __extends(PrimaryButton, _super);

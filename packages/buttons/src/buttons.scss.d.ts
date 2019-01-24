@@ -1,6 +1,8 @@
-export const pink: string;
-export const subElement: string;
-export const chicken: string;
-export const perhaps: string;
-export const another: string;
-export const sight: string;
+declare namespace buttons {
+	const pink: string
+	const urgh: string
+	const another: string
+	const another1: string
+	const another2: string
+}
+export default buttons
