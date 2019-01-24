@@ -29,21 +29,20 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
-var styles = {"mainColor1":"buttons_mainColor1__2YFdR","second":"buttons_second__13T2n"};
+var styles = {"dialog":"dialogs_dialog__ki-QP"};
 
-var PrimaryButton = (function (_super) {
-    __extends(PrimaryButton, _super);
-    function PrimaryButton() {
+var Dialog = (function (_super) {
+    __extends(Dialog, _super);
+    function Dialog() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    PrimaryButton.prototype.render = function () {
-        var _a = this.props, label = _a.label, className = _a.className, onClick = _a.onClick;
-        return (createElement("button", { onClick: onClick, className: className + " " + styles.mainColor1 },
-            label,
-            "!!!"));
+    Dialog.prototype.render = function () {
+        var title = this.props.title;
+        return (createElement("div", { className: styles.dialog },
+            createElement("h1", null, title)));
     };
-    return PrimaryButton;
+    return Dialog;
 }(Component));
 
-export default PrimaryButton;
-//# sourceMappingURL=buttons.js.map
+export default Dialog;
+//# sourceMappingURL=dialogs.js.map

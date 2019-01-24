@@ -1,10 +1,5 @@
 declare namespace buttons {
-	const pink: string
-	const red: string
-	const urgh: string
-	const another: string
-	const another1: string
-	const another2: string
-	const validClassname3: string
+	const mainColor1: string
+	const second: string
 }
 export default buttons

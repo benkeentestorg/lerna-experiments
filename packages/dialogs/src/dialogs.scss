@@ -1,7 +1,13 @@
-$color1: #333333;
+$color1: #3399CC;
 
 .dialog {
   padding: 30px;
-  border: 1px solid #efefef;
+  border: 1px solid $color1;
   margin: 10px;
+
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: verdana;
+  }
 }
