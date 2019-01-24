@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "start": "node build/sass-typings-watcher.js & lerna run start & yarn storybook",
+    "sassTypings": "node build/sass-typings-init.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "devDependencies": {
     "lerna": "^3.10.2",
     "react": "^16.7.0",
@@ -16,9 +22,5 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
-  "dependencies": {},
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  }
+  "dependencies": {}
 }

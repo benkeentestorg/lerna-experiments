@@ -3,6 +3,9 @@ $color1: #333333;
 .pink {
     color: pink;
 }
+.red {
+    color: red;
+}
 .urgh {
   color: $color1;
   font-weight: bold;
@@ -11,4 +14,8 @@ $color1: #333333;
 .another1 { color: $color1; }
 .another2 {
   color: indianred;
+}
+
+.validClassname3 {
+  color: red;
 }

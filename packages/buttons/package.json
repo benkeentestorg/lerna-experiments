@@ -17,7 +17,7 @@
   "repository": "benkeentestorg/lerna-experiments",
   "scripts": {
     "build": "rollup -c",
-    "start": "node generateDefaultTypings.js & rollup -c -w",
+    "start": "rollup -c -w",
     "test": "jest"
   },
   "bugs": {

@@ -1,32 +1,50 @@
 {
   "name": "@benkeentestorg/dialogs",
-  "version": "1.0.11",
-  "description": "> TODO: description",
+  "version": "1.0.19",
+  "description": "Dialog component.",
   "author": "Ben Keen <ben.keen@gmail.com>",
   "homepage": "https://github.com/benkeentestorg/lerna-experiments#readme",
   "license": "ISC",
-  "main": "lib/dialogs.js",
-  "typings": "lib/dialogs.d.ts",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/dialogs.js",
+  "module": "dist/dialogs.js",
+  "typings": "dist/dialogs.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": "benkeentestorg/lerna-experiments",
   "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/benkeentestorg/lerna-experiments/issues"
   },
-  "gitHead": "016642d5850cd9b8086eaa14e491e93fa53d9786",
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-modules": "^1.4.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-postcss": "^2.0.0",
+    "rollup-plugin-sass": "^1.1.0",
+    "rollup-plugin-typescript2": "^0.19.2",
+    "typed-css-modules": "^0.3.7",
+    "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
   "dependencies": {
-    "react": "^16.7.0"
-  }
+    "@types/react": "^16.7.20",
+    "node-sass-chokidar": "^1.3.4"
+  },
+  "gitHead": "69b2df1235748bce458611e18740c6d4e7d208c6"
 }

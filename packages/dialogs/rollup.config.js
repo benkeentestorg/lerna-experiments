@@ -28,10 +28,10 @@ export default {
     external: [
         'react'
     ],
-    input: './src/buttons.tsx',
+    input: './src/dialogs.tsx',
     output: [
         {
-            file: './dist/buttons.js',
+            file: './dist/dialogs.js',
             format: 'es',
             sourcemap: true
         }

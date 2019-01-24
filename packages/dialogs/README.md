@@ -1,11 +1,3 @@
-# `dialogs`
+# `buttons`
 
-> TODO: description
-
-## Usage
-
-```
-const dialogs = require('dialogs');
-
-// TODO: DEMONSTRATE API
-```
+Tests.
